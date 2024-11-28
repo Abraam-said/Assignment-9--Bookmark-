@@ -1,0 +1,57 @@
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7ecde;
+}
+
+main div h1 {
+    color: #352e28;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+}
+
+main div h1::before {
+    content: "";
+    background-color: #fec260;
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 10px;
+    transition: height 350ms;
+    z-index: -1;
+}
+
+main div h1:hover::before {
+    height: 50%;
+
+}
+
+.bookmark {
+    border-color: #352e28;
+    border-style: dotted;
+    border-width: 2px 0 2px 0;
+}
+
+.bookmark h2 {
+    font-family: "Righteous", cursive;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    font-size: 25px;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#submit {
+    background-color: #d1512d;
+    color: white;
+}
+
+table thead th {
+    font-family: "PT Sans Caption", sans-serif;
+}
